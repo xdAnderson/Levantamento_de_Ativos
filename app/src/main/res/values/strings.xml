@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Levantamento de Ativos</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+
+    <string-array name="unidades">
+        <item>Escolha uma Unidade...</item>
+        <item>ALMIRANTE BARROSO</item>
+        <item>AUGUSTO MONTENEGRO</item>
+        <item>AUGUSTO MONTENEGRO FORMOSA</item>
+        <item>BR</item>
+        <item>BRAZ DE AGUIAR</item>
+        <item>CANAÃ DOS CARAJÁS</item>
+        <item>CAPANEMA</item>
+        <item>CASF</item>
+        <item>CASTANHAL</item>
+        <item>CIDADE NOVA FORMOSA</item>
+        <item>CIDADE NOVA SN3</item>
+        <item>EVOLUTION</item>
+        <item>GOOD PAX</item>
+        <item>HOSP. ONCOLOGICO</item>
+        <item>HOSP. ORDEM TERCEIRA</item>
+        <item>HOSP. SAÚDE DA MULHER</item>
+        <item>HUMAITÁ</item>
+        <item>JOSÉ MALCHER</item>
+        <item>LOBO</item>
+        <item>MATER. SAÚDE DA CRIANÇA</item>
+        <item>MUNDURUCUS</item>
+        <item>PARAGOMINAS</item>
+        <item>PARAUAPEBAS</item>
+        <item>PORTO DIAS</item>
+        <item>PRIME</item>
+        <item>PRO-FEMME</item>
+        <item>REDENTOR</item>
+        <item>SENADOR LEMOS</item>
+        <item>VIGIA</item>
+    </string-array>
+
+    <string-array name="setores">
+        <item>Escolha um Setor...</item>
+        <item>Recepção</item>
+        <item>Coleta</item>
+        <item>Ultrasom</item>
+        <item>Colposcopia</item>
+        <item>Departamento Pessoal</item>
+        <item>Recursos Humanos</item>
+        <item>Faturamento</item>
+        <item>Administrativo</item>
+        <item>Almoxarifado</item>
+        <item>Automação</item>
+        <item>Biologia Molecular</item>
+        <item>Cadastro da Triagem de Amostra</item>
+        <item>Caixa</item>
+        <item>Call Center</item>
+        <item>Captura Híbrida</item>
+        <item>Citometria</item>
+        <item>Coloração</item>
+        <item>Compras</item>
+        <item>Contabilidade</item>
+        <item>Convênios</item>
+        <item>Corte e Inclusão</item>
+        <item>Esterelização</item>
+        <item>Financeiro</item>
+        <item>Gerência de Coleta</item>
+        <item>Gerência Financeira</item>
+        <item>Gerência Técnica</item>
+        <item>Hematologia</item>
+        <item>Imuni-Histoquímica</item>
+        <item>Imunologia</item>
+        <item>Imunologia Manual</item>
+        <item>Laboratório de Apoio</item>
+        <item>Laudos</item>
+        <item>Macroscopia</item>
+        <item>Microbiologia</item>
+        <item>Microscopia</item>
+        <item>Parasitologia</item>
+        <item>Produção</item>
+        <item>Qualidade</item>
+        <item>Recepção e Triagem de Amostra</item>
+        <item>Secretaria da Patologia</item>
+        <item>Secretaria Dr. Paulo</item>
+        <item>Secretaria Financeira</item>
+        <item>Tecnologia da Informação</item>
+        <item>Urinálise</item>
+    </string-array>
+</resources>
