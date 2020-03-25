@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.FormularioActivity">
+    tools:context=".view.OutrosActivity">
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -26,12 +26,39 @@
                 android:layout_height="100dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
-                app:layout_constraintBottom_toTopOf="@+id/textView4"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/cpu" />
+                app:srcCompat="@drawable/outros" />
+
+            <EditText
+                android:id="@+id/et_equip_outros"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/textView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:text="Equipamento/Ativo:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/et_equip_outros"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -41,13 +68,13 @@
                 android:text="Marca:"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="24sp"
-                app:layout_constraintBottom_toTopOf="@+id/et_marca"
+                app:layout_constraintBottom_toTopOf="@+id/et_marca_outros"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
-                android:id="@+id/et_marca"
+                android:id="@+id/et_marca_outros"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -61,7 +88,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
-                android:id="@+id/et_modelo"
+                android:id="@+id/et_modelo_outros"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -76,7 +103,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
-                android:id="@+id/et_num_serie"
+                android:id="@+id/et_num_serie_outros"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -91,7 +118,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
-                android:id="@+id/et_patrimonio"
+                android:id="@+id/et_patrimonio_outros"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -100,7 +127,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:textAlignment="center"
-                app:layout_constraintBottom_toTopOf="@+id/sp_setor"
+                app:layout_constraintBottom_toTopOf="@+id/sp_setor_outros"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -113,7 +140,7 @@
                 android:text="Modelo:"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="24sp"
-                app:layout_constraintBottom_toTopOf="@+id/et_modelo"
+                app:layout_constraintBottom_toTopOf="@+id/et_modelo_outros"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -126,7 +153,7 @@
                 android:text="Nº de Série:"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="24sp"
-                app:layout_constraintBottom_toTopOf="@+id/et_num_serie"
+                app:layout_constraintBottom_toTopOf="@+id/et_num_serie_outros"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -139,7 +166,7 @@
                 android:text="Patrimônio:"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="24sp"
-                app:layout_constraintBottom_toTopOf="@+id/et_patrimonio"
+                app:layout_constraintBottom_toTopOf="@+id/et_patrimonio_outros"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -152,13 +179,13 @@
                 android:text="Obs.:"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="24sp"
-                app:layout_constraintBottom_toTopOf="@+id/et_obs"
+                app:layout_constraintBottom_toTopOf="@+id/et_obs_outros"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.007"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <Spinner
-                android:id="@+id/sp_setor"
+                android:id="@+id/sp_setor_outros"
                 android:layout_width="338dp"
                 android:layout_height="33dp"
                 android:layout_marginStart="24dp"
@@ -172,19 +199,19 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
-                android:id="@+id/et_obs"
+                android:id="@+id/et_obs_outros"
                 android:layout_width="338dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
                 android:ems="10"
                 android:inputType="textLongMessage|textMultiLine|textPersonName|textCapSentences"
                 android:textAlignment="textStart"
-                app:layout_constraintBottom_toTopOf="@+id/bt_cadastrar"
+                app:layout_constraintBottom_toTopOf="@+id/bt_cadastrar_outros"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <Button
-                android:id="@+id/bt_cadastrar"
+                android:id="@+id/bt_cadastrar_outros"
                 android:layout_width="126dp"
                 android:layout_height="40dp"
                 android:layout_marginBottom="24dp"

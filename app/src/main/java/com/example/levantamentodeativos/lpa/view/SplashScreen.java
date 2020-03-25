@@ -9,6 +9,16 @@ import android.os.Handler;
 import com.example.levantamentodeativos.lpa.R;
 
 public class SplashScreen extends AppCompatActivity {
+    public static String DUPLA = "";
+    public static String UNIDADE = "";
+    public static String ATIVO = "";
+    public static String MARCA = "";
+    public static String MODELO = "";
+    public static String NSERIE = "";
+    public static String PATRIMONIO = "";
+    public static String SETOR = "";
+    public static String OBS = "";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +33,7 @@ public class SplashScreen extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        }, 2000);
+        }, 1000);
 
     }
 }
