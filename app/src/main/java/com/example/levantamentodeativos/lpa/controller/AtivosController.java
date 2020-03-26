@@ -1,11 +1,11 @@
-package com.example.levantamentodeativos.lpa.view.controller;
+package com.example.levantamentodeativos.lpa.controller;
 import android.content.ContentValues;
 import android.content.Context;
 import androidx.annotation.Nullable;
 
-import com.example.levantamentodeativos.lpa.view.datamodel.AtivoDataModel;
-import com.example.levantamentodeativos.lpa.view.datasource.DataSource;
-import com.example.levantamentodeativos.lpa.view.model.AtivoModel;
+import com.example.levantamentodeativos.lpa.datamodel.AtivoDataModel;
+import com.example.levantamentodeativos.lpa.datasource.DataSource;
+import com.example.levantamentodeativos.lpa.model.AtivoModel;
 
 import java.util.List;
 

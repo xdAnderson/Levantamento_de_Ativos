@@ -1,4 +1,4 @@
-package com.example.levantamentodeativos.lpa.view.view;
+package com.example.levantamentodeativos.lpa.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 

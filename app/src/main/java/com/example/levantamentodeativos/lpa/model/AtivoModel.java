@@ -1,6 +1,7 @@
-package com.example.levantamentodeativos.lpa.view.model;
+package com.example.levantamentodeativos.lpa.model;
 
 public class AtivoModel {
+    private int id;
     private String dupla;
     private String unidade;
     private String ativo;
@@ -81,5 +82,13 @@ public class AtivoModel {
 
     public void setObs(String obs) {
         this.obs = obs;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

@@ -1,26 +1,25 @@
-package com.example.levantamentodeativos.lpa.view.datasource;
+package com.example.levantamentodeativos.lpa.datasource;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteCantOpenDatabaseException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Environment;
-import android.util.Log;
 
 import androidx.annotation.Nullable;
 
-import com.example.levantamentodeativos.lpa.view.datamodel.AtivoDataModel;
-import com.example.levantamentodeativos.lpa.view.model.AtivoModel;
+import com.example.levantamentodeativos.lpa.datamodel.AtivoDataModel;
+import com.example.levantamentodeativos.lpa.model.AtivoModel;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 public class DataSource extends SQLiteOpenHelper {
 private static final String DB_NAME = "levantamento_de_ativos.sqlite";
@@ -84,30 +83,47 @@ Cursor cursor;
         return lista;
     }
 
-    public void salvarCVS(String dados){
-        File caminho = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/Levantamento_de_Ativos_LPA");
-        if (!caminho.exists())
-            caminho.mkdir();
+//    public void salvarCVS(String dados){
+//        File caminho = new File(Environment.getExternalStorageDirectory().getAbsolutePath()+"/Levantamento_de_Ativos_LPA");
+//        if (!caminho.exists())
+//            caminho.mkdir();
+//
+//        File file = new File(caminho.getPath()+"/BANCO_DE_ATIVOS.csv");
+//
+//        try {
+//            FileOutputStream out = new FileOutputStream(file);
+//
+//            out.write(dados.getBytes(), 0, dados.getBytes().length);
+//            //esse método write deve ficar dentro da estrutura de repetição
+//
+//            //já essa parte de flush e close tem que ficar fora e
+//            //deve ser executada apenas quando já tiver terminado de gerar todo o arquivo
+//            out.flush();
+//            out.close();
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            // TODO Auto-generated catch block
+//            e.printStackTrace();
+//        }
+//    }
 
-        File file = new File(caminho.getPath()+"/BANCO_DE_ATIVOS.csv");
-
-        try {
-            FileOutputStream out = new FileOutputStream(file);
-
-            out.write(dados.getBytes(), 0, dados.getBytes().length);
-            //esse método write deve ficar dentro da estrutura de repetição
-
-            //já essa parte de flush e close tem que ficar fora e
-            //deve ser executada apenas quando já tiver terminado de gerar todo o arquivo
-            out.flush();
-            out.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+    public void deletarTabela(String tabela){
+        try{
+            db.execSQL("DROP TABLE IF EXISTS "+tabela);
+        }catch (Exception e){
         }
     }
+
+    public void criarTabela(String queryCriarTabela){
+        try{
+            db.execSQL(queryCriarTabela);
+        }catch (SQLiteCantOpenDatabaseException e){
+
+        }
+    }
+
+
 }
 
 

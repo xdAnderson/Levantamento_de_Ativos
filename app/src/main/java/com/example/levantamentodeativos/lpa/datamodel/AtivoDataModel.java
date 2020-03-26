@@ -1,4 +1,4 @@
-package com.example.levantamentodeativos.lpa.view.datamodel;
+package com.example.levantamentodeativos.lpa.datamodel;
 
 public class AtivoDataModel {
 

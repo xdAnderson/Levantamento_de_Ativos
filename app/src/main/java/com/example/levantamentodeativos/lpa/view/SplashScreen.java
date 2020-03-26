@@ -1,4 +1,4 @@
-package com.example.levantamentodeativos.lpa.view.view;
+package com.example.levantamentodeativos.lpa.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.levantamentodeativos.lpa.R;
-import com.example.levantamentodeativos.lpa.view.datasource.DataSource;
+import com.example.levantamentodeativos.lpa.datasource.DataSource;
 
 public class SplashScreen extends AppCompatActivity {
     public static String DUPLA = "";

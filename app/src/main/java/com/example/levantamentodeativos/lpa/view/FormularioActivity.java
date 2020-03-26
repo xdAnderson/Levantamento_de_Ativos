@@ -1,4 +1,4 @@
-package com.example.levantamentodeativos.lpa.view.view;
+package com.example.levantamentodeativos.lpa.view;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,8 +13,8 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 
 import com.example.levantamentodeativos.lpa.R;
-import com.example.levantamentodeativos.lpa.view.controller.AtivosController;
-import com.example.levantamentodeativos.lpa.view.model.AtivoModel;
+import com.example.levantamentodeativos.lpa.controller.AtivosController;
+import com.example.levantamentodeativos.lpa.model.AtivoModel;
 import com.google.android.material.snackbar.Snackbar;
 
 public class FormularioActivity extends AppCompatActivity {
