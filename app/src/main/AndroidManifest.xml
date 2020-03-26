@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.levantamentodeativos.lpa">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,16 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.OutrosActivity"></activity>
+        <activity android:name=".view.view.OutrosActivity"></activity>
         <activity
-            android:name=".view.FormularioActivity"
+            android:name=".view.view.FormularioActivity"
             android:label="Formulário de Ativo" />
         <activity
-            android:name=".view.MenuAtivos"
+            android:name=".view.view.MenuAtivos"
             android:label="Escolha um ativo" />
-        <activity android:name=".view.DuplasUnidadesActivity" />
+        <activity android:name=".view.view.DuplasUnidadesActivity" />
         <activity
-            android:name=".view.SplashScreen"
+            android:name=".view.view.SplashScreen"
             android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

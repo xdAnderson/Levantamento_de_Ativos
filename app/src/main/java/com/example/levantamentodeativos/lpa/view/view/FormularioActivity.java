@@ -1,4 +1,4 @@
-package com.example.levantamentodeativos.lpa.view;
+package com.example.levantamentodeativos.lpa.view.view;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,11 +10,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Space;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import com.example.levantamentodeativos.lpa.R;
+import com.example.levantamentodeativos.lpa.view.controller.AtivosController;
+import com.example.levantamentodeativos.lpa.view.model.AtivoModel;
 import com.google.android.material.snackbar.Snackbar;
 
 public class FormularioActivity extends AppCompatActivity {
@@ -28,6 +28,7 @@ public class FormularioActivity extends AppCompatActivity {
     Spinner spSetor;
     Button btCadastrar;
     AlertDialog alerta;
+    AtivoModel objAtivo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -88,31 +89,38 @@ public class FormularioActivity extends AppCompatActivity {
                 }else if(spinnerSelected==0){
                     Snackbar.make(v,"Campo \"Setor\" em branco", Snackbar.LENGTH_LONG).show();
                 }else{
-                    SplashScreen.MARCA = etMarca.getText().toString();
-                    SplashScreen.MODELO = etModelo.getText().toString();
-                    SplashScreen.NSERIE = etNumSerie.getText().toString();
-                    SplashScreen.PATRIMONIO = etPatrimonio.getText().toString();
-                    SplashScreen.SETOR = spSetor.getSelectedItem().toString();
-                    SplashScreen.OBS = etObs.getText().toString();
+                    objAtivo = new AtivoModel();
+                    objAtivo.setDupla(SplashScreen.DUPLA);
+                    objAtivo.setUnidade(SplashScreen.UNIDADE);
+                    objAtivo.setAtivo(SplashScreen.ATIVO);
+                    objAtivo.setMarca(etMarca.getText().toString());
+                    objAtivo.setModelo(etModelo.getText().toString());
+                    objAtivo.setNumserie(etNumSerie.getText().toString());
+                    objAtivo.setPatrimonio(etPatrimonio.getText().toString());
+                    objAtivo.setSetor(spSetor.getSelectedItem().toString());
+                    objAtivo.setObs(etObs.getText().toString());
 
-                    //Cria o gerador do AlertDialog
-                    AlertDialog.Builder builder = new AlertDialog.Builder(getBaseContext());
-                    //define o titulo
-                    builder.setTitle("Ativo cadastrado");
-                    //define a mensagem
-                    builder.setMessage(SplashScreen.ATIVO+"\nMarca: "+SplashScreen.MARCA+"\nModelo: "
-                            +SplashScreen.MODELO+"\nNº de Série: "+SplashScreen.NSERIE+"\nPatrimônio: "
-                            +SplashScreen.PATRIMONIO+"\nSetor: "+SplashScreen.SETOR+"Obs: "+SplashScreen.OBS);
-                    //define um botão como positivo
+                    AtivosController ativosController = new AtivosController(getBaseContext());
+                    boolean sucesso = ativosController.salvar(objAtivo);
+                    String msgValidacao="";
+                    if (sucesso){
+                        msgValidacao = "Ativo Cadastrado";
+                    }else{
+                        msgValidacao = "Erro ao Cadastrar";
+                    }
+
+                    AlertDialog.Builder builder = new AlertDialog.Builder(FormularioActivity.this);
+                    builder.setTitle(msgValidacao);
+                    builder.setMessage(objAtivo.getAtivo()+"\nMarca: "+objAtivo.getMarca()+"\nModelo: "
+                            +objAtivo.getModelo()+"\nNº de Série: "+objAtivo.getNumserie()+"\nPatrimônio: "
+                            +objAtivo.getPatrimonio()+"\nSetor: "+objAtivo.getSetor()+"\nObs: "+objAtivo.getObs());
                     builder.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
+                            finish();
                         }
                     });
-
-                    //cria o AlertDialog
                     alerta = builder.create();
-                    //Exibe
                     alerta.show();
                 }
             }

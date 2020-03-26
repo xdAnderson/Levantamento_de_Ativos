@@ -1,4 +1,4 @@
-package com.example.levantamentodeativos.lpa.view;
+package com.example.levantamentodeativos.lpa.view.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,18 +7,12 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.levantamentodeativos.lpa.R;
+import com.example.levantamentodeativos.lpa.view.datasource.DataSource;
 
 public class SplashScreen extends AppCompatActivity {
     public static String DUPLA = "";
     public static String UNIDADE = "";
     public static String ATIVO = "";
-    public static String MARCA = "";
-    public static String MODELO = "";
-    public static String NSERIE = "";
-    public static String PATRIMONIO = "";
-    public static String SETOR = "";
-    public static String OBS = "";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +23,8 @@ public class SplashScreen extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
+
+                DataSource ds = new DataSource((getBaseContext()));
                 Intent intent = new Intent(SplashScreen.this, DuplasUnidadesActivity.class);
                 startActivity(intent);
                 finish();
@@ -37,3 +33,9 @@ public class SplashScreen extends AppCompatActivity {
 
     }
 }
+
+
+
+
+
+
