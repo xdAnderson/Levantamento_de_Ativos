@@ -6,20 +6,14 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteCantOpenDatabaseException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.os.Environment;
 
 import androidx.annotation.Nullable;
 
 import com.example.levantamentodeativos.lpa.datamodel.AtivoDataModel;
 import com.example.levantamentodeativos.lpa.model.AtivoModel;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 
 public class DataSource extends SQLiteOpenHelper {
 private static final String DB_NAME = "levantamento_de_ativos.sqlite";
@@ -65,7 +59,7 @@ Cursor cursor;
         if(cursor.moveToFirst()){
             do{
                 obj = new AtivoModel();
-                obj.setDupla(cursor.getString(cursor.getColumnIndex(AtivoDataModel.getDupla())));
+                obj.setAnalista(cursor.getString(cursor.getColumnIndex(AtivoDataModel.getAnalista())));
                 obj.setUnidade(cursor.getString(cursor.getColumnIndex(AtivoDataModel.getUnidade())));
                 obj.setAtivo(cursor.getString(cursor.getColumnIndex(AtivoDataModel.getAtivo())));
                 obj.setModelo(cursor.getString(cursor.getColumnIndex(AtivoDataModel.getModelo())));

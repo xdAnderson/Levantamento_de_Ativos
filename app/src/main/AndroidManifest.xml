@@ -12,14 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.OutrosActivity"></activity>
         <activity
             android:name=".view.FormularioActivity"
             android:label="Formulário de Ativo" />
         <activity
             android:name=".view.MenuAtivos"
             android:label="Escolha um ativo" />
-        <activity android:name=".view.DuplasUnidadesActivity" />
+        <activity android:name=".view.AnalistUnidadesActivity" />
         <activity
             android:name=".view.SplashScreen"
             android:theme="@style/Theme.Design.NoActionBar">

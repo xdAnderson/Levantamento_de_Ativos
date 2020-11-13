@@ -2,22 +2,37 @@ package com.example.levantamentodeativos.lpa.model;
 
 public class AtivoModel {
     private int id;
-    private String dupla;
+    private String analista;
     private String unidade;
     private String ativo;
     private String marca;
     private String modelo;
     private String numserie;
     private String patrimonio;
+    private String origem;
     private String setor;
     private String obs;
+    private String sistemaoperacional;
+    private String arquitetura;
+    private String processador;
+    private String ram;
+    private String hdssd;
 
-    public String getDupla() {
-        return dupla;
+
+    public int getId() {
+        return id;
     }
 
-    public void setDupla(String dupla) {
-        this.dupla = dupla;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getAnalista() {
+        return analista;
+    }
+
+    public void setAnalista(String analista) {
+        this.analista = analista;
     }
 
     public String getUnidade() {
@@ -68,6 +83,14 @@ public class AtivoModel {
         this.patrimonio = patrimonio;
     }
 
+    public String getOrigem() {
+        return origem;
+    }
+
+    public void setOrigem(String origem) {
+        this.origem = origem;
+    }
+
     public String getSetor() {
         return setor;
     }
@@ -84,11 +107,43 @@ public class AtivoModel {
         this.obs = obs;
     }
 
-    public int getId() {
-        return id;
+    public String getSistemaoperacional() {
+        return sistemaoperacional;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setSistemaoperacional(String sistemaoperacional) {
+        this.sistemaoperacional = sistemaoperacional;
+    }
+
+    public String getArquitetura() {
+        return arquitetura;
+    }
+
+    public void setArquitetura(String arquitetura) {
+        this.arquitetura = arquitetura;
+    }
+
+    public String getProcessador() {
+        return processador;
+    }
+
+    public void setProcessador(String processador) {
+        this.processador = processador;
+    }
+
+    public String getRam() {
+        return ram;
+    }
+
+    public void setRam(String ram) {
+        this.ram = ram;
+    }
+
+    public String getHdssd() {
+        return hdssd;
+    }
+
+    public void setHdssd(String hdssd) {
+        this.hdssd = hdssd;
     }
 }

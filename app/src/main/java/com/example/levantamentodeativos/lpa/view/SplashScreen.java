@@ -10,7 +10,7 @@ import com.example.levantamentodeativos.lpa.R;
 import com.example.levantamentodeativos.lpa.datasource.DataSource;
 
 public class SplashScreen extends AppCompatActivity {
-    public static String DUPLA = "";
+    public static String ANALISTA = "";
     public static String UNIDADE = "";
     public static String ATIVO = "";
 
@@ -25,7 +25,7 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
 
                 DataSource ds = new DataSource((getBaseContext()));
-                Intent intent = new Intent(SplashScreen.this, DuplasUnidadesActivity.class);
+                Intent intent = new Intent(SplashScreen.this, AnalistUnidadesActivity.class);
                 startActivity(intent);
                 finish();
             }

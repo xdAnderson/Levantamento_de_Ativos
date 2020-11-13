@@ -5,13 +5,14 @@ public class AtivoDataModel {
     private final static String TABELA = "ativos";
 
     private final static String id = "id";
-    private final static String dupla = "dupla";
+    private final static String analista = "analista";
     private final static String unidade = "unidade";
     private final static String ativo = "ativo";
     private final static String marca = "marca";
     private final static String modelo = "modelo";
     private final static String numserie = "numeroserie";
     private final static String patrimonio = "patrimonio";
+    private final static String origem = "origem";
     private final static String setor = "setor";
     private final static String obs = "obs";
 
@@ -21,7 +22,7 @@ public class AtivoDataModel {
         queryCriarTabela = "CREATE TABLE "+TABELA;
         queryCriarTabela += " (";
         queryCriarTabela += id+" INTEGER PRIMARY KEY AUTOINCREMENT, ";
-        queryCriarTabela += dupla+" TEXT, ";
+        queryCriarTabela += analista +" TEXT, ";
         queryCriarTabela += unidade+" TEXT, ";
         queryCriarTabela += ativo+" TEXT, ";
         queryCriarTabela += marca+" TEXT, ";
@@ -43,8 +44,8 @@ public class AtivoDataModel {
         return id;
     }
 
-    public static String getDupla() {
-        return dupla;
+    public static String getAnalista() {
+        return analista;
     }
 
     public static String getUnidade() {

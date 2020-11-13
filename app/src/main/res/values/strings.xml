@@ -19,11 +19,13 @@
         <item>AUGUSTO MONTENEGRO</item>
         <item>AUGUSTO MONTENEGRO FORMOSA</item>
         <item>BR</item>
+        <item>BRAGANÇA</item>
         <item>BRAZ DE AGUIAR</item>
         <item>CANAÃ DOS CARAJÁS</item>
         <item>CAPANEMA</item>
         <item>CASF</item>
         <item>CASTANHAL</item>
+        <item>CIDADE JARDINS</item>
         <item>CIDADE NOVA FORMOSA</item>
         <item>CIDADE NOVA SN3</item>
         <item>EVOLUTION</item>
@@ -46,15 +48,18 @@
         <item>VIGIA</item>
     </string-array>
 
+    <string-array name="origens">
+        <item>Escolha a Origem...</item>
+        <item>Alugado</item>
+        <item>Comodato</item>
+        <item>Emprestado</item>
+        <item>Próprio</item>
+    </string-array>
+
     <string-array name="setores">
         <item>Escolha um Setor...</item>
         <item>Recepção</item>
         <item>Coleta</item>
-        <item>Ultrasom</item>
-        <item>Colposcopia</item>
-        <item>Departamento Pessoal</item>
-        <item>Recursos Humanos</item>
-        <item>Faturamento</item>
         <item>Administrativo</item>
         <item>Almoxarifado</item>
         <item>Automação</item>
@@ -65,17 +70,20 @@
         <item>Captura Híbrida</item>
         <item>Citometria</item>
         <item>Coloração</item>
+        <item>Colposcopia</item>
         <item>Compras</item>
         <item>Contabilidade</item>
         <item>Convênios</item>
         <item>Corte e Inclusão</item>
+        <item>Departamento Pessoal</item>
         <item>Esterelização</item>
+        <item>Faturamento</item>
         <item>Financeiro</item>
         <item>Gerência de Coleta</item>
         <item>Gerência Financeira</item>
         <item>Gerência Técnica</item>
         <item>Hematologia</item>
-        <item>Imuni-Histoquímica</item>
+        <item>Imuno-Histoquímica</item>
         <item>Imunologia</item>
         <item>Imunologia Manual</item>
         <item>Laboratório de Apoio</item>
@@ -87,10 +95,12 @@
         <item>Produção</item>
         <item>Qualidade</item>
         <item>Recepção e Triagem de Amostra</item>
+        <item>Recursos Humanos</item>
         <item>Secretaria da Patologia</item>
         <item>Secretaria Dr. Paulo</item>
         <item>Secretaria Financeira</item>
         <item>Tecnologia da Informação</item>
+        <item>Ultrasom</item>
         <item>Urinálise</item>
     </string-array>
 

@@ -19,7 +19,7 @@ public class AtivosController extends DataSource {
         boolean sucesso = true;
         dados = new ContentValues();
 
-        dados.put(AtivoDataModel.getDupla(),obj.getDupla());
+        dados.put(AtivoDataModel.getAnalista(),obj.getAnalista());
         dados.put(AtivoDataModel.getUnidade(),obj.getUnidade());
         dados.put(AtivoDataModel.getAtivo(),obj.getAtivo());
         dados.put(AtivoDataModel.getMarca(),obj.getMarca());

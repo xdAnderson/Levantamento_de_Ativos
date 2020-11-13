@@ -144,7 +144,8 @@ public class MenuAtivos extends AppCompatActivity {
         btOutros.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(MenuAtivos.this, OutrosActivity.class);
+                SplashScreen.ATIVO = "Outros";
+                intent = new Intent(MenuAtivos.this, FormularioActivity.class);
                 startActivity(intent);
             }
         });
