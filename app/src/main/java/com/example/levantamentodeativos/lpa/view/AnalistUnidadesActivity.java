@@ -2,13 +2,9 @@ package com.example.levantamentodeativos.lpa.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -17,24 +13,7 @@ import android.widget.Spinner;
 
 import com.example.levantamentodeativos.lpa.R;
 import com.example.levantamentodeativos.lpa.controller.AtivosController;
-import com.example.levantamentodeativos.lpa.datamodel.AtivoDataModel;
-import com.example.levantamentodeativos.lpa.model.AtivoModel;
-import com.example.levantamentodeativos.lpa.util.UtilAtivos;
 import com.google.android.material.snackbar.Snackbar;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 public class AnalistUnidadesActivity extends AppCompatActivity {
     Spinner spUnidade;
@@ -49,7 +28,7 @@ public class AnalistUnidadesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_analist_unidades);
 
-        spUnidade = findViewById(R.id.spn_unidades);
+        spUnidade = findViewById(R.id.sp_unidades);
         btIniciar = findViewById(R.id.bt_ini_cad);
         //btExtrair = findViewById(R.id.bt_extrair);
         rgAnalistas = findViewById(R.id.rg_analistas);
@@ -62,7 +41,7 @@ public class AnalistUnidadesActivity extends AppCompatActivity {
                 int radioSelected = rgAnalistas.getCheckedRadioButtonId();
                 int spinnerSelected = spUnidade.getSelectedItemPosition();
 
-                if(radioSelected!=-1) {
+                if(radioSelected != -1) {
                     if(spinnerSelected==0){
                         Snackbar.make(v, "Selecione uma Unidade", Snackbar.LENGTH_LONG).show();
                     }else{

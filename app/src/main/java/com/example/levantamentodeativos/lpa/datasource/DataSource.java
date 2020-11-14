@@ -66,7 +66,13 @@ Cursor cursor;
                 obj.setMarca(cursor.getString(cursor.getColumnIndex(AtivoDataModel.getMarca())));
                 obj.setNumserie(cursor.getString(cursor.getColumnIndex(AtivoDataModel.getNumserie())));
                 obj.setPatrimonio(cursor.getString(cursor.getColumnIndex(AtivoDataModel.getPatrimonio())));
+                obj.setOrigem(cursor.getString(cursor.getColumnIndex(AtivoDataModel.getOrigem())));
                 obj.setSetor(cursor.getString(cursor.getColumnIndex(AtivoDataModel.getSetor())));
+                obj.setSistemaOperacional(cursor.getString(cursor.getColumnIndex(AtivoDataModel.getSistemaoperacional())));
+                obj.setArquitetura(cursor.getString(cursor.getColumnIndex(AtivoDataModel.getArquitetura())));
+                obj.setProcessador(cursor.getString(cursor.getColumnIndex(AtivoDataModel.getProcessador())));
+                obj.setRam(cursor.getString(cursor.getColumnIndex(AtivoDataModel.getRam())));
+                obj.setHdssd(cursor.getString(cursor.getColumnIndex(AtivoDataModel.getHdssd())));
                 obj.setObs(cursor.getString(cursor.getColumnIndex(AtivoDataModel.getObs())));
 
                 lista.add(obj);

@@ -14,6 +14,11 @@ public class AtivoDataModel {
     private final static String patrimonio = "patrimonio";
     private final static String origem = "origem";
     private final static String setor = "setor";
+    private final static String sistemaoperacional = "sistemaoperacional";
+    private final static String arquitetura = "arquitetura";
+    private final static String processador = "processador";
+    private final static String ram = "ram";
+    private final static String hdssd = "hdssd";
     private final static String obs = "obs";
 
     private static String queryCriarTabela = "";
@@ -29,7 +34,13 @@ public class AtivoDataModel {
         queryCriarTabela += modelo+" TEXT, ";
         queryCriarTabela += numserie+" TEXT, ";
         queryCriarTabela += patrimonio+" TEXT, ";
+        queryCriarTabela += origem+" TEXT, ";
         queryCriarTabela += setor+" TEXT, ";
+        queryCriarTabela += sistemaoperacional+" TEXT, ";
+        queryCriarTabela += processador+" TEXT, ";
+        queryCriarTabela += arquitetura+" TEXT, ";
+        queryCriarTabela += ram+" TEXT, ";
+        queryCriarTabela += hdssd+" TEXT, ";
         queryCriarTabela += obs+" TEXT";
         queryCriarTabela += ")";
 
@@ -72,8 +83,32 @@ public class AtivoDataModel {
         return patrimonio;
     }
 
+    public static String getOrigem() {
+        return origem;
+    }
+
     public static String getSetor() {
         return setor;
+    }
+
+    public static String getSistemaoperacional() {
+        return sistemaoperacional;
+    }
+
+    public static String getArquitetura() {
+        return arquitetura;
+    }
+
+    public static String getProcessador() {
+        return processador;
+    }
+
+    public static String getRam() {
+        return ram;
+    }
+
+    public static String getHdssd() {
+        return hdssd;
     }
 
     public static String getObs() {
@@ -87,5 +122,8 @@ public class AtivoDataModel {
     public static void setQueryCriarTabela(String queryCriarTabela) {
         AtivoDataModel.queryCriarTabela = queryCriarTabela;
     }
+
+
+
 }
 

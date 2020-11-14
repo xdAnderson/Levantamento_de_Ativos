@@ -75,7 +75,7 @@
     </RadioGroup>
 
     <Spinner
-        android:id="@+id/spn_unidades"
+        android:id="@+id/sp_unidades"
         android:layout_width="317dp"
         android:layout_height="39dp"
         android:background="?attr/colorButtonNormal"
@@ -98,7 +98,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spn_unidades" />
+        app:layout_constraintTop_toBottomOf="@+id/sp_unidades" />
 
     <TextView
         android:id="@+id/textView2"
@@ -121,9 +121,9 @@
         android:text="Unidade:"
         android:textColor="@android:color/black"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/spn_unidades"
+        app:layout_constraintEnd_toEndOf="@+id/sp_unidades"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/spn_unidades"
+        app:layout_constraintStart_toStartOf="@+id/sp_unidades"
         app:layout_constraintTop_toBottomOf="@+id/rg_analistas" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

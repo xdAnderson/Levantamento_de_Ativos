@@ -100,7 +100,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:textAlignment="center"
-                app:layout_constraintBottom_toTopOf="@+id/spinner"
+                app:layout_constraintBottom_toTopOf="@+id/sp_origem"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -285,6 +285,7 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName"
+                    android:textAlignment="center"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView28" />
@@ -311,10 +312,9 @@
                         android:id="@+id/rb_x64"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="RadioButton"
+                        android:text="x64 (64 bits)"
                         android:textColor="@color/colorPrimary"
-                        android:textSize="18sp"
-                        tools:text="x64 (64 bits)" />
+                        android:textSize="18sp" />
                 </RadioGroup>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -333,7 +333,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/sp_origem"
                 android:layout_width="338dp"
                 android:layout_height="33dp"
                 android:layout_marginBottom="8dp"

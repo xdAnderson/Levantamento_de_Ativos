@@ -107,11 +107,11 @@ public class AtivoModel {
         this.obs = obs;
     }
 
-    public String getSistemaoperacional() {
+    public String getSistemaOperacional() {
         return sistemaoperacional;
     }
 
-    public void setSistemaoperacional(String sistemaoperacional) {
+    public void setSistemaOperacional(String sistemaoperacional) {
         this.sistemaoperacional = sistemaoperacional;
     }
 
